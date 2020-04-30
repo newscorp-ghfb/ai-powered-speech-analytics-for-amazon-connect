@@ -69,7 +69,7 @@ public class KVSTranscribeStreamingLambda implements RequestHandler<Transcriptio
     private static final String INPUT_KEY_PREFIX = System.getenv("INPUT_KEY_PREFIX");
     private static final boolean CONSOLE_LOG_TRANSCRIPT_FLAG = Boolean.parseBoolean(System.getenv("CONSOLE_LOG_TRANSCRIPT_FLAG"));
     private static final boolean RECORDINGS_PUBLIC_READ_ACL = Boolean.parseBoolean(System.getenv("RECORDINGS_PUBLIC_READ_ACL"));
-    private static final String START_SELECTOR_TYPE = System.getenv("START_SELECTOR_TYPE");
+    private static final String START_SELECTOR_TYPE = System.getenv("FRAGMENT_NUMBER");
     private static final String TABLE_CALLER_TRANSCRIPT = System.getenv("TABLE_CALLER_TRANSCRIPT");
     private static final String TABLE_CALLER_TRANSCRIPT_TO_CUSTOMER = System.getenv("TABLE_CALLER_TRANSCRIPT_TO_CUSTOMER");
 
